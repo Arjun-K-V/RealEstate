@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleY="2"
+            android:src="@drawable/login" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#2F80ED"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textColor="#2F80ED"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="30dp"/>
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="350dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:textColor="#2F80ED"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="350dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#2F80ED"
+            android:gravity="center"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="325dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/custom_button"
+            android:text="Login"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Here ? "
+                android:textSize="18sp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#2F80ED"/>
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#2F80ED"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
